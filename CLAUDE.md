@@ -2,7 +2,15 @@
 
 This file provides high-context guidance for AI assistants (Claude, ChatGPT, Cursor) working in this nRF Connect SDK (NCS) repository.
 
-## 🛠 Build & Environment (West)
+## � CRITICAL SAFETY RULES (READ FIRST)
+**You MUST STOP and warn the user if a request involves:**
+1.  **Writing UICR**: `NRF_UICR->...` or `nrf_nvmc_write_uicr` at runtime. **(Risk: PERMANENT BRICK)**.
+2.  **PMIC/Regulators**: Changing `regulator-initial-mode` without explicit hardware verification.
+3.  **Network Core/Secure Boot**: Modifying `child_image/` configs without understanding the partition layout.
+
+---
+
+## �🛠 Build & Environment (West)
 -   **Initialize**: `west init -m <url> --mr <revision>` (Only for new workspace)
 -   **Update Deps**: `west update` (Run often to sync `sdk-nrf` and modules)
 -   **Build**: `west build -b <board_name> -d build`
@@ -30,11 +38,6 @@ This file provides high-context guidance for AI assistants (Claude, ChatGPT, Cur
 -   **Concurrency**:
     -   Use `k_sleep()` (yields), NOT `k_busy_wait()` (blocks).
     -   ISR -> Semaphore -> Thread for processing data.
-
-## 🚨 Safety (Anti-Bricking)
--   **UICR**: **NEVER** write to UICR at runtime (Risk of bricking via APPROTECT).
--   **PMIC**: Careful with P0.00/P0.01 (nreset) or PMIC pins.
--   **Multi-Core**: Don't try to configure Network Core peripherals from App Core `prj.conf`.
 
 ## 📚 Knowledge Base
 -   `context/ncs_knowledge_map.md`: **Start Here** for documentation index.
