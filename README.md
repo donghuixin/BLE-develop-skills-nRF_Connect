@@ -60,8 +60,8 @@ graph TD
     HAL --> Hardware[nRF52/53/54 SoC]
     
     subgraph Configuration
-    Kconfig[prj.conf (Features)]
-    DTS[app.overlay (Hardware)]
+    Kconfig["prj.conf (Features)"]
+    DTS["app.overlay (Hardware)"]
     end
     
     Managers -.-> Kconfig
