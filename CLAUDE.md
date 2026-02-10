@@ -2,15 +2,16 @@
 
 This file provides high-context guidance for AI assistants (Claude, ChatGPT, Cursor) working in this nRF Connect SDK (NCS) repository.
 
-## � CRITICAL SAFETY RULES (READ FIRST)
+## 🚨 CRITICAL SAFETY RULES (READ FIRST)
 **You MUST STOP and warn the user if a request involves:**
 1.  **Writing UICR**: `NRF_UICR->...` or `nrf_nvmc_write_uicr` at runtime. **(Risk: PERMANENT BRICK)**.
-2.  **PMIC/Regulators**: Changing `regulator-initial-mode` without explicit hardware verification.
-3.  **Network Core/Secure Boot**: Modifying `child_image/` configs without understanding the partition layout.
+2.  **PMIC/Regulators**: Changing `regulator-initial-mode` or writing to BQ25120A register `0x06` (non-existent).
+3.  **Network Core/Secure Boot**: Modifying `child_image/` or `NRF_RESET->NETWORK.FORCEOFF` without checking `CONFIG_SOC_NRF53_CPUNET_ENABLE`.
+4.  **IO Confusion**: Swapping **P0.17** (PMIC CD) with **P1.05** (Button) on nRF5340 custom boards.
 
 ---
 
-## �🛠 Build & Environment (West)
+## 🛠 Build & Environment (West)
 -   **Initialize**: `west init -m <url> --mr <revision>` (Only for new workspace)
 -   **Update Deps**: `west update` (Run often to sync `sdk-nrf` and modules)
 -   **Build**: `west build -b <board_name> -d build`

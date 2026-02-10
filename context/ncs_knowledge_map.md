@@ -16,8 +16,9 @@ This project contains a comprehensive knowledge base for nRF Connect SDK develop
 -   **`zephyr_peripherals.md`**: "Gold Standard" copy-paste patterns for GPIO, I2C, SPI.
 -   **`nordic_docs_index.md`**: Links to official Hardware Datasheets (Product Specs).
 
-## 4. Advanced Topics (Architecture)
--   **`real_world_architectures.md`**: How to structure complex production apps (Managers, Services) based on OpenSource projects.
+## 4. Real-World Architectures & Case Studies
+-   **`meow_sense_tag_lessons.md`**: **HARD-WON LESSONS**. nRF5340 Dual-Core, BQ25120A PMIC, and rescue strategies.
+-   **`real_world_architectures.md`**: Analysis of *OpenEarable*, *Seeed*, and *MakerDiary*. Comparison of module-based vs bare-chip designs.Source projects.
 
 ## 5. Examples
 -   **`examples/i2c_sensor_read`**: Reference implementation of the "Hardware First" workflow.
