@@ -75,10 +75,10 @@ This repo is "AI-Ready".
 
 ## 🌟 Star History
 
-<a href="https://star-history.com/#donghuixin/embedded_BLE-develop-skills-nRF_Connect&Date">
+ <a href="https://star-history.com/#donghuixin/BLE-develop-skills-nRF_Connect&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=donghuixin/embedded_BLE-develop-skills-nRF_Connect&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=donghuixin/embedded_BLE-develop-skills-nRF_Connect&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=donghuixin/embedded_BLE-develop-skills-nRF_Connect&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=donghuixin/BLE-develop-skills-nRF_Connect&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=donghuixin/BLE-develop-skills-nRF_Connect&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=donghuixin/BLE-develop-skills-nRF_Connect&type=Date" />
  </picture>
 </a>

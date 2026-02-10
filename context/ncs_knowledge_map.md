@@ -7,6 +7,7 @@ This project contains a comprehensive knowledge base for nRF Connect SDK develop
 -   **`critical_safety_rules_antibricking.md`**: Mandatory safety checks for UICR, PMIC, and Multi-core to prevent hardware damage.
 
 ## 2. The Basics (Getting Started)
+-   **`ble_core_guide.md`**: **BLE Bible**. Concepts, Stack, Roles, and Production Guide.
 -   **`zephyr_basics.md`**: Quick reference for DeviceTree syntax, Kconfig, and Driver Model concepts.
 -   **`ncs_project_structure.md`**: Where files belong (`boards/`, `child_image/`, `src/`).
 
