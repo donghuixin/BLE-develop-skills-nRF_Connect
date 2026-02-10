@@ -19,16 +19,6 @@
 
 ---
 
-## 🚨 CRITICAL: Anti-Bricking Protocals
-
-**We take hardware safety seriously.** To prevent locking your device (bricking):
-
-> [!IMPORTANT]
-> **1. NO Runtime UICR Writes**: Writing to `UICR` registers at runtime is **strictly prohibited**. It risks corrupting `APPROTECT` and permanently locking the debug port.
->
-> **2. Voltage Validation**: Incorrect DCDC/LDO configuration in `devicetree` can damage the PMIC or SoC. Always validate `regulator-initial-mode`.
->
-> **3. Multi-Core isolation**: On nRF53/91, **never** configure Network Core peripherals from the Application Core.
 
 ## 🚀 Why this exists?
 
@@ -116,6 +106,17 @@ This repo is "AI-Ready".
 1.  Copy `prompts/master_system_prompt.md` into your AI's custom instructions.
 2.  The AI will now respect **Safety Rules** and **Zephyr Standards** automatically.
 3.  Reference `CLAUDE.md` for quick context injection.
+
+## 🚨 CRITICAL: Anti-Bricking Protocals
+
+**We take hardware safety seriously.** To prevent locking your device (bricking):
+
+> [!IMPORTANT]
+> **1. NO Runtime UICR Writes**: Writing to `UICR` registers at runtime is **strictly prohibited**. It risks corrupting `APPROTECT` and permanently locking the debug port.
+>
+> **2. Voltage Validation**: Incorrect DCDC/LDO configuration in `devicetree` can damage the PMIC or SoC. Always validate `regulator-initial-mode`.
+>
+> **3. Multi-Core isolation**: On nRF53/91, **never** configure Network Core peripherals from the Application Core.
 
 ## 🌟 Star History
 
