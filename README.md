@@ -40,6 +40,39 @@ Don't just copy-paste. Understand the architecture.
 | 🔌 **[Peripherals](context/zephyr_peripherals.md)** | Gold-standard patterns for GPIO, I2C, SPI. |
 | 🏛️ **[Real World Arch](context/real_world_architectures.md)** | Lessons from *OpenEarable*, *Seeed*, and *MakerDiary*. |
 
+## 🧘 Philosophy
+
+We believe in a **"Hardware-First, Safety-critical"** approach to firmware:
+
+1.  **Truth is in the Overlay**: If a physical wire exists, it MUST be defined in `app.overlay`. We do not "hardcode" pins in C files.
+2.  **OS Native**: We do not fight the RTOS. We use Zephyr's Drivers, Workqueues, and Logging subsystems instead of reinventing wheels.
+3.  **Anti-Bricking**: We respect the hardware limits. We never touch UICR at runtime, and we validate power configurations before deployment.
+
+## 🏗 Architecture
+
+The system follows a strict layered architecture to ensure portability and scalability:
+
+```mermaid
+graph TD
+    App[Application Logic] --> Managers[Managers / Services]
+    Managers --> Drivers[Zephyr Device Drivers]
+    Drivers --> HAL[Nordic nrfx HAL]
+    HAL --> Hardware[nRF52/53/54 SoC]
+    
+    subgraph Configuration
+    Kconfig[prj.conf (Features)]
+    DTS[app.overlay (Hardware)]
+    end
+    
+    Managers -.-> Kconfig
+    Drivers -.-> DTS
+```
+
+-   **Application Layer**: Business logic (e.g., "Send Heart Rate"). Setup in `src/main.c` (Managers).
+-   **Service Layer**: Reusable modules (e.g., "BLE Service", "Sensor Manager").
+-   **Zephyr Kernel**: The abstraction layer (Scheduler, API).
+-   **Hardware**: Defined strictly in **DeviceTree**.
+
 ## 📂 Project Structure
 
 ```text
