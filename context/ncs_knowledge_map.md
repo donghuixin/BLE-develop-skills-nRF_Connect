@@ -8,6 +8,7 @@ This project contains a comprehensive knowledge base for nRF Connect SDK develop
 
 ## 2. The Basics (Getting Started)
 -   **`ble_core_guide.md`**: **BLE Bible**. Concepts, Stack, Roles, and Production Guide.
+-   **`jlink_debug_guide.md`**: **Debugging**. RTT, Commander, and Recovering Bricked Boards.
 -   **`zephyr_basics.md`**: Quick reference for DeviceTree syntax, Kconfig, and Driver Model concepts.
 -   **`ncs_project_structure.md`**: Where files belong (`boards/`, `child_image/`, `src/`).
 
