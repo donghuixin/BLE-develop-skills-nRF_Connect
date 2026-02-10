@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "West Build (Pristine)",
+            "type": "shell",
+            "command": "west build -p always -b ${input:boardName}",
+            "group": "build",
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "West Build",
+            "type": "shell",
+            "command": "west build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "West Flash",
+            "type": "shell",
+            "command": "west flash",
+            "problemMatcher": []
+        },
+        {
+            "label": "Flash & Monitor",
+            "type": "shell",
+            "command": "${workspaceFolder}/scripts/flash_and_monitor.sh",
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "boardName",
+            "type": "promptString",
+            "description": "Enter Board Name (e.g., nrf52840dk_nrf52840)",
+            "default": "nrf52840dk_nrf52840"
+        }
+    ]
+}

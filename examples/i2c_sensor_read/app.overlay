@@ -1,0 +1,26 @@
+/*
+ * Copyright (c) 2024 Nordic Semiconductor ASA
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/* 
+ * Hardware Netlist Definition 
+ * We attach a generic temperature sensor to Arduino I2C connector.
+ * Check board documentation for which pins 'arduino_i2c' maps to.
+ */
+
+&arduino_i2c {
+	status = "okay";
+
+	/* 
+	 * Generic I2C Sensor Node
+	 * label: used for DeviceTree lookup
+	 * reg: I2C address (7-bit) e.g., 0x4A
+	 */
+	temp_sensor: sensor@4a {
+		compatible = "i2c-device";
+		reg = <0x4a>;
+		label = "TEMP_SENSOR";
+	};
+};
