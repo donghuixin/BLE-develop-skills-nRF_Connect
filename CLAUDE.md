@@ -9,6 +9,7 @@ This file provides high-context guidance for AI assistants (Claude, ChatGPT, Cur
 3.  **Network Core/Secure Boot**: Modifying `child_image/` or `NRF_RESET->NETWORK.FORCEOFF` without checking `CONFIG_SOC_NRF53_CPUNET_ENABLE`.
 4.  **IO Confusion**: Swapping **P0.17** (PMIC CD) with **P1.05** (Button) on nRF5340 custom boards.
 5.  **Leakage Control**: Modifying **P0.14** on XIAO BLE (Sense) without accounting for the battery voltage divider switch.
+6.  **nRF54L15 Boot**: Deploying nRF54L15 on battery with `CONFIG_SERIAL=y` (Code will hang waiting for USB).
 
 ---
 
