@@ -22,5 +22,8 @@ This project contains a comprehensive knowledge base for nRF Connect SDK develop
 -   **`meow_sense_tag_lessons.md`**: **HARD-WON LESSONS**. nRF5340 Dual-Core, BQ25120A PMIC, and rescue strategies.
 -   **`real_world_architectures.md`**: Analysis of *OpenEarable*, *Seeed*, and *MakerDiary*. Comparison of module-based vs bare-chip designs.Source projects.
 
-## 5. Examples
+## 5. Meta-Skills & Agent Strategy
+-   **`ai_embedded_skill_roadmap.md`**: **STRATEGY CORE**. The roadmap for checking hardware truth (SVD/Netlist) and using hierarchical verification agents.
+
+## 6. Examples
 -   **`examples/i2c_sensor_read`**: Reference implementation of the "Hardware First" workflow.

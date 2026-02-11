@@ -1,6 +1,12 @@
 # Seeed Studio XIAO nRF Master Guide
 *Covering XIAO nRF52840 (Sense) and XIAO nRF54L15 (Sense)*
 
+> [!IMPORTANT]
+> **Hardware Abstraction Rule**: Embedded code is NOT portable between chip generations! 
+> - **nRF52** registers $\neq$ **nRF54** registers.
+> - **Pin mappings** change physically between boards.
+> - **ALWAYS** verify the DeviceTree (`.dts`) and Datasheet before running code. Do not blindly copy examples.
+
 ## 1. Quick Start: Which Board?
 
 | Feature | XIAO nRF52840 (Sense) | XIAO nRF54L15 (Sense) |
