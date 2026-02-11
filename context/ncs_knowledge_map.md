@@ -17,6 +17,7 @@ This project contains a comprehensive knowledge base for nRF Connect SDK develop
 -   **`nordic_docs_index.md`**: Links to official Hardware Datasheets (Product Specs).
 
 ## 4. Real-World Architectures & Case Studies
+-   **`xiao_ble_architecture.md`**: Analysis of Seeed Studio XIAO BLE. Dual-core strategies (Mbed vs FreeRTOS) and peripheral optimization.
 -   **`meow_sense_tag_lessons.md`**: **HARD-WON LESSONS**. nRF5340 Dual-Core, BQ25120A PMIC, and rescue strategies.
 -   **`real_world_architectures.md`**: Analysis of *OpenEarable*, *Seeed*, and *MakerDiary*. Comparison of module-based vs bare-chip designs.Source projects.
 

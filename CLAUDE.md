@@ -8,6 +8,7 @@ This file provides high-context guidance for AI assistants (Claude, ChatGPT, Cur
 2.  **PMIC/Regulators**: Changing `regulator-initial-mode` or writing to BQ25120A register `0x06` (non-existent).
 3.  **Network Core/Secure Boot**: Modifying `child_image/` or `NRF_RESET->NETWORK.FORCEOFF` without checking `CONFIG_SOC_NRF53_CPUNET_ENABLE`.
 4.  **IO Confusion**: Swapping **P0.17** (PMIC CD) with **P1.05** (Button) on nRF5340 custom boards.
+5.  **Leakage Control**: Modifying **P0.14** on XIAO BLE (Sense) without accounting for the battery voltage divider switch.
 
 ---
 
