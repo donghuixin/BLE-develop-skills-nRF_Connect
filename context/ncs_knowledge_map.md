@@ -8,6 +8,7 @@ This project contains a comprehensive knowledge base for nRF Connect SDK develop
 
 ## 2. The Basics (Getting Started)
 -   **`ncs_fundamentals_guide.md`**: **ACADEMY CORE**. DeviceTree, GPIO API, Kconfig/prj.conf, and Logging (from Nordic Academy Lessons 2-4).
+-   **`ncs_fundamentals_advanced_guide.md`**: **ACADEMY ADVANCED**. UART async, I2C driver, Multithreading, Semaphores & Mutexes (Lessons 4-8).
 -   **`ble_core_guide.md`**: **BLE Bible**. Concepts, Stack, Roles, and Production Guide.
 -   **`jlink_debug_guide.md`**: **Debugging**. RTT, Commander, and Recovering Bricked Boards.
 -   **`zephyr_basics.md`**: Quick reference for DeviceTree syntax, Kconfig, and Driver Model concepts.
@@ -30,4 +31,6 @@ This project contains a comprehensive knowledge base for nRF Connect SDK develop
 -   **`examples/basic_blinky`**: The "Hello World" of NCS.
 -   **`examples/gpio_button_led`**: Interrupt-based Button → LED (Nordic Academy Lesson 2).
 -   **`examples/logging_demo`**: Zephyr Logger Module with all severity levels + hexdump (Nordic Academy Lesson 4).
+-   **`examples/uart_async`**: UART Async API with EasyDMA — LED control via serial (Lesson 4).
+-   **`examples/thread_sync`**: K_THREAD_DEFINE + K_MUTEX_DEFINE race condition demo (Lessons 7-8).
 -   **`examples/i2c_sensor_read`**: Reference implementation of the "Hardware First" workflow.

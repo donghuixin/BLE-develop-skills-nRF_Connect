@@ -6,7 +6,7 @@
 ![Zephyr](https://img.shields.io/badge/RTOS-Zephyr-purple)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-orange)
-![Knowledge](https://img.shields.io/badge/Context_Files-15-brightgreen)
+![Knowledge](https://img.shields.io/badge/Context_Files-16-brightgreen)
 
 **The "Missing Manual" for nRF Connect SDK (NCS) Development.**  
 *Bridging the gap between "Hello World" and Enterprise-Grade Firmware — with a strict Hardware Truth workflow.*
@@ -61,6 +61,7 @@ We operate on three non-negotiable principles:
 | File | Role |
 | :--- | :--- |
 | [NCS Fundamentals](context/ncs_fundamentals_guide.md) | **Academy Core**: DeviceTree, GPIO API, Kconfig, Logging (Lessons 2-4). |
+| [NCS Advanced](context/ncs_fundamentals_advanced_guide.md) | **Academy Advanced**: UART, I2C, Multithreading, Sync (Lessons 4-8). |
 | [Zephyr Basics](context/zephyr_basics.md) | DeviceTree syntax, Kconfig, Driver Model. |
 | [Peripherals](context/zephyr_peripherals.md) | Gold-standard GPIO / I2C / SPI patterns. |
 | [BLE Core Guide](context/ble_core_guide.md) | BLE stack, roles, advertising, and production tips. |
@@ -141,18 +142,21 @@ Read more → [`context/ai_embedded_skill_roadmap.md`](context/ai_embedded_skill
 
 ```text
 ├── CLAUDE.md              # 🤖 AI "Driver's License" + Safety Triggers
-├── context/               # 🧠 The Knowledge Brain (15 files)
+├── context/               # 🧠 The Knowledge Brain (16 files)
 │   ├── ncs_knowledge_map.md         # START HERE
 │   ├── ncs_fundamentals_guide.md    # Nordic Academy Lessons 2-4
+│   ├── ncs_fundamentals_advanced_guide.md # Nordic Academy Lessons 4-8
 │   ├── ncs_engineering_standards.md # The Constitution
 │   ├── ai_embedded_skill_roadmap.md # AI Agent Strategy
 │   ├── seeed_xiao_master_guide.md   # nRF52840/nRF54L15 Guide
 │   └── ...                          # BLE, J-Link, Peripherals, etc.
 ├── docs/                  # Usage Guides
-├── examples/              # Verified Reference Code (4 projects)
+├── examples/              # Verified Reference Code (6 projects)
 │   ├── basic_blinky/      # The "Hello World" of NCS
 │   ├── gpio_button_led/   # Interrupt-based Button → LED
 │   ├── logging_demo/      # Zephyr Logger (all levels + hexdump)
+│   ├── uart_async/        # UART Async API with EasyDMA
+│   ├── thread_sync/       # Multithreading + Mutex sync
 │   └── i2c_sensor_read/   # The "Hardware First" workflow demo
 ├── prompts/               # System Prompts for AI customization
 └── scripts/               # Automation tools (Flash/Monitor)
