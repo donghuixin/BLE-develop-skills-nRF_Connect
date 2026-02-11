@@ -7,6 +7,7 @@ This project contains a comprehensive knowledge base for nRF Connect SDK develop
 -   **`critical_safety_rules_antibricking.md`**: Mandatory safety checks for UICR, PMIC, and Multi-core to prevent hardware damage.
 
 ## 2. The Basics (Getting Started)
+-   **`ncs_fundamentals_guide.md`**: **ACADEMY CORE**. DeviceTree, GPIO API, Kconfig/prj.conf, and Logging (from Nordic Academy Lessons 2-4).
 -   **`ble_core_guide.md`**: **BLE Bible**. Concepts, Stack, Roles, and Production Guide.
 -   **`jlink_debug_guide.md`**: **Debugging**. RTT, Commander, and Recovering Bricked Boards.
 -   **`zephyr_basics.md`**: Quick reference for DeviceTree syntax, Kconfig, and Driver Model concepts.
@@ -26,4 +27,7 @@ This project contains a comprehensive knowledge base for nRF Connect SDK develop
 -   **`ai_embedded_skill_roadmap.md`**: **STRATEGY CORE**. The roadmap for checking hardware truth (SVD/Netlist) and using hierarchical verification agents.
 
 ## 6. Examples
+-   **`examples/basic_blinky`**: The "Hello World" of NCS.
+-   **`examples/gpio_button_led`**: Interrupt-based Button → LED (Nordic Academy Lesson 2).
+-   **`examples/logging_demo`**: Zephyr Logger Module with all severity levels + hexdump (Nordic Academy Lesson 4).
 -   **`examples/i2c_sensor_read`**: Reference implementation of the "Hardware First" workflow.
