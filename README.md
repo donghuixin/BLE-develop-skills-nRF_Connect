@@ -1,4 +1,4 @@
-# ⚡️ embedded_Skill_nRF_Connect
+# ⚡️ BLE_Development_Skills_nRF_Connect
 
 <div align="center">
 
