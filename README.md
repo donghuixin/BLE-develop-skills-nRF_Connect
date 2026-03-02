@@ -68,6 +68,7 @@ We operate on three non-negotiable principles:
 | [J-Link Debug Guide](context/jlink_debug_guide.md) | RTT logging, J-Link Commander recovery, multi-core debug. |
 | [Project Structure](context/ncs_project_structure.md) | `boards/`, `child_image/`, `src/modules/` layout. |
 
+
 ### 🏛️ Real-World Case Studies
 | File | Role |
 | :--- | :--- |
@@ -75,6 +76,7 @@ We operate on three non-negotiable principles:
 | [XIAO BLE Architecture](context/xiao_ble_architecture.md) | Deep dive into nRF52840 dual-core strategy (Mbed vs Zephyr). |
 | [Meow Sense Tag Lessons](context/meow_sense_tag_lessons.md) | **Hard-won lessons**: nRF5340, BQ25120A PMIC, anti-bricking rescue ops. |
 | [Real World Architectures](context/real_world_architectures.md) | *OpenEarable*, *Seeed*, *MakerDiary* — module vs bare-chip. |
+| [Nordic Tech]([nordic tech report](https://www.nordicsemi.cn/tag/blog/)) | nordic tech report. |
 
 ### 🤖 AI Agent Strategy
 | File | Role |
