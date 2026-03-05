@@ -6,7 +6,7 @@
 ![Zephyr](https://img.shields.io/badge/RTOS-Zephyr-purple)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-orange)
-![Knowledge](https://img.shields.io/badge/Context_Files-16-brightgreen)
+![Knowledge](https://img.shields.io/badge/Context_Files-17-brightgreen)
 
 **The "Missing Manual" for nRF Connect SDK (NCS) Development.**  
 *Bridging the gap between "Hello World" and Enterprise-Grade Firmware — with a strict Hardware Truth workflow.*
@@ -76,6 +76,7 @@ We operate on three non-negotiable principles:
 | [XIAO BLE Architecture](context/xiao_ble_architecture.md) | Deep dive into nRF52840 dual-core strategy (Mbed vs Zephyr). |
 | [Meow Sense Tag Lessons](context/meow_sense_tag_lessons.md) | **Hard-won lessons**: nRF5340, BQ25120A PMIC, anti-bricking rescue ops. |
 | [Real World Architectures](context/real_world_architectures.md) | *OpenEarable*, *Seeed*, *MakerDiary* — module vs bare-chip. |
+| [Nordic Neuton Edge AI Guide](context/nordic_neuton_edge_ai_guide.md) | **Ultra-low-power AI**: Custom Neuton models for nRF52/53/54 SoCs with nRF Edge AI Runtime API. |
 | [Nordic Tech]([nordic tech report](https://www.nordicsemi.cn/tag/blog/)) | nordic tech report. |
 
 ### 🤖 AI Agent Strategy

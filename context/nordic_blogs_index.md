@@ -14,8 +14,9 @@
   * **摘要**: 阐述 Zephyr 实时操作系统的优势及 Nordic 加入它的历程和所获提升。
 
 ## 无线协议与前沿技术（蓝牙、RF、AI）
-- [采用定制化 Neuton 模型，赋能超低功耗边缘 AI](https://www.nordicsemi.cn/blog/empowering-ultra-low-power-edge-ai-with-custom-neuton-models/)
-  * **摘要**: 讲解创建定制 Neuton 模型并将其集成到 nRF Connect SDK 应用中的技术流程，实现超低功耗边缘人工智能。
+- [采用定制化 Neuton 模型，赋能超低功耗边缘 AI](./nordic_neuton_edge_ai_guide.md)
+  * 原文链接: [详情](https://www.nordicsemi.cn/blog/powering-ultra-low-energy-edge-ai-with-custom-neuton-models/)
+  * **摘要**: 深入解析如何在 Nordic nRF 系列 SoC 上创建和部署超高效的定制 Neuton 边缘 AI 模型，包含完整的技术实现流程、API函数、数据采集要求和性能优化策略。涵盖可穿戴设备活动检测、工业异常检测等应用场景，提供从模型创建到软件集成的全方位指导。
 - [蓝牙®︎ 核心规范 6.2 新特性概述](https://www.nordicsemi.cn/blog/whats-new-in-bluetooth-core-6-2-an-overview/)
   * **摘要**: 介绍低至 7.5 毫秒的新型连接间隔(SCI)技术及其他对蓝牙产品生态的提升。
 - [使用我们的开源Android应用在Google Pixel 10上评估蓝牙信道探测](https://www.nordicsemi.cn/blog/evaluating-bluetooth-channel-sounding-with-our-open-2d00-source-android-app-on-google-pixel-10/)
